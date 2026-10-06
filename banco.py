@@ -101,10 +101,8 @@ class Banco:
         print("           EXCLUIR CONTA")
         print("="*40)
         
-        # O ID deve ser capturado como inteiro (int) para buscar no dicionário
         id_conta = int(input("👉 Digite o ID da conta que deseja excluir: "))
 
-        # Lógica corrigida de busca direta no dicionário
         if id_conta in self.contas:
             conta_removida = self.contas[id_conta]
             del self.contas[id_conta]
